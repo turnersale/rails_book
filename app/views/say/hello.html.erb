@@ -6,3 +6,23 @@
         Time to say
        <%= link_to "Goodbye", say_goodbye_path %> 
     </p>
+    <p>
+        What does addition of 1+1 look like?
+        <%= 1+2 %>
+    </p>
+    <p>
+        Can I concat two strings?
+        <%= "cow" + "boy" %>
+    </p>
+    <p>
+        What about relative datetimes?
+        <%= 1.hour.from_now.localtime %>
+    </p>
+    <p>
+        What files do we have in the dir?
+        <ul>
+            <% @files.each do |file| %>
+                file name is : <%= file %> <br>
+            <% end %>
+        </ul>
+    </p>
